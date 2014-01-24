@@ -5,7 +5,7 @@
 
 StatusFrame::StatusFrame(const DirectGraphics &directGraphics)
 :
-sprite(directGraphics.Device(), TEXT("statusFrame.png"), RECT{0, 0, 400, 600}, D3DXVECTOR3(0, 0, 0), false)
+sprite(directGraphics.Device(), TEXT("Resource/StatusFrame.png"), RECT{0, 0, 400, 600}, D3DXVECTOR3(0, 0, 0), false)
 {
 }
 

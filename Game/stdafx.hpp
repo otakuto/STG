@@ -10,7 +10,6 @@
 #include <windows.h>
 
 #include <stdlib.h>
-#include <malloc.h>
 #include <memory.h>
 #include <wchar.h>
 
@@ -21,6 +20,7 @@
 #include <functional>
 #include <array>
 #include <random>
+#include <cmath>
 
 #include <boost/coroutine/coroutine.hpp>
 

@@ -60,6 +60,27 @@
     <ClCompile Include="stdafx.cpp" />
     <ClCompile Include="Texture.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\Bullet\000.png" />
+    <Image Include="Resource\Bullet\001.png" />
+    <Image Include="Resource\Effect\000\000.png" />
+    <Image Include="Resource\Effect\000\001.png" />
+    <Image Include="Resource\Effect\000\002.png" />
+    <Image Include="Resource\Effect\000\003.png" />
+    <Image Include="Resource\Effect\000\004.png" />
+    <Image Include="Resource\Effect\000\005.png" />
+    <Image Include="Resource\Effect\000\006.png" />
+    <Image Include="Resource\Effect\000\007.png" />
+    <Image Include="Resource\Enemy\000.png" />
+    <Image Include="Resource\Enemy\001.png" />
+    <Image Include="Resource\Enemy\002.png" />
+    <Image Include="Resource\Enemy\003.png" />
+    <Image Include="Resource\Enemy\004.png" />
+    <Image Include="Resource\Enemy\005.png" />
+    <Image Include="Resource\Player.png" />
+    <Image Include="Resource\Shot.png" />
+    <Image Include="Resource\StatusFrame.png" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{33528997-D9E6-4124-971A-F6934EC09033}</ProjectGuid>
     <RootNamespace>Game</RootNamespace>

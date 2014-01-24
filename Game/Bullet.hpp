@@ -8,7 +8,7 @@
 class Bullet : public IDrawable, public IRunnable
 {
 public:
-	typedef std::function<void (D3DXVECTOR3 &position, D3DXVECTOR3 &speed, const unsigned long long &time)> BulletOrbit;
+	using BulletOrbit = std::function<void(D3DXVECTOR3 &position, D3DXVECTOR3 &speed, const unsigned long long time)>;
 
 public:
 	Bullet(const std::shared_ptr<const Sprite> sprite, const BulletOrbit &bulletOrbit, const D3DXVECTOR3 &position, const D3DXVECTOR3 &speed, const float radius, const float angle);

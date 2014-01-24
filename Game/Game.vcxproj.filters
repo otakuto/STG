@@ -73,6 +73,21 @@
     <Filter Include="DirectX\DirectInput">
       <UniqueIdentifier>{8f5d0147-9c8e-4d7c-b5d7-601c69f9e4f5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{707f3723-f1a5-427d-b53c-7d5dc79c361b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Enemy">
+      <UniqueIdentifier>{04735d34-6b04-4edc-9236-6467d1497cc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Effect">
+      <UniqueIdentifier>{7b54f44b-4343-4d71-be32-f50d80601a5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Effect\000">
+      <UniqueIdentifier>{64025331-e2ea-400d-b03c-bcb48ddeea63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource\Bullet">
+      <UniqueIdentifier>{23f999c9-69c7-4dc9-8e7f-22ee889905b2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -215,5 +230,64 @@
     <ClInclude Include="ILife.hpp">
       <Filter>ILife</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\Shot.png">
+      <Filter>Resource</Filter>
+    </Image>
+    <Image Include="Resource\StatusFrame.png">
+      <Filter>Resource</Filter>
+    </Image>
+    <Image Include="Resource\Player.png">
+      <Filter>Resource</Filter>
+    </Image>
+    <Image Include="Resource\Enemy\000.png">
+      <Filter>Resource\Enemy</Filter>
+    </Image>
+    <Image Include="Resource\Enemy\001.png">
+      <Filter>Resource\Enemy</Filter>
+    </Image>
+    <Image Include="Resource\Enemy\002.png">
+      <Filter>Resource\Enemy</Filter>
+    </Image>
+    <Image Include="Resource\Enemy\003.png">
+      <Filter>Resource\Enemy</Filter>
+    </Image>
+    <Image Include="Resource\Enemy\004.png">
+      <Filter>Resource\Enemy</Filter>
+    </Image>
+    <Image Include="Resource\Enemy\005.png">
+      <Filter>Resource\Enemy</Filter>
+    </Image>
+    <Image Include="Resource\Effect\000\000.png">
+      <Filter>Resource\Effect\000</Filter>
+    </Image>
+    <Image Include="Resource\Effect\000\001.png">
+      <Filter>Resource\Effect\000</Filter>
+    </Image>
+    <Image Include="Resource\Effect\000\002.png">
+      <Filter>Resource\Effect\000</Filter>
+    </Image>
+    <Image Include="Resource\Effect\000\003.png">
+      <Filter>Resource\Effect\000</Filter>
+    </Image>
+    <Image Include="Resource\Effect\000\004.png">
+      <Filter>Resource\Effect\000</Filter>
+    </Image>
+    <Image Include="Resource\Effect\000\005.png">
+      <Filter>Resource\Effect\000</Filter>
+    </Image>
+    <Image Include="Resource\Effect\000\006.png">
+      <Filter>Resource\Effect\000</Filter>
+    </Image>
+    <Image Include="Resource\Effect\000\007.png">
+      <Filter>Resource\Effect\000</Filter>
+    </Image>
+    <Image Include="Resource\Bullet\000.png">
+      <Filter>Resource\Bullet</Filter>
+    </Image>
+    <Image Include="Resource\Bullet\001.png">
+      <Filter>Resource\Bullet</Filter>
+    </Image>
   </ItemGroup>
 </Project>
