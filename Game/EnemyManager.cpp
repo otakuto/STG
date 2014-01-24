@@ -1,0 +1,44 @@
+#pragma once
+#include "stdafx.h"
+#include "EnemyManager.h"
+#include "Enemy.h"
+
+EnemyManager::EnemyManager()
+	:
+	enemyList()
+{
+}
+
+EnemyManager::~EnemyManager()
+{
+}
+
+void EnemyManager::Run()
+{
+	for (auto iterator = enemyList.begin(); iterator != enemyList.end();)
+	{
+		if ((*iterator)->Enabled())
+		{
+			(*iterator)->Run();
+			 ++iterator;
+		}
+		else
+		{
+			delete *iterator;
+			iterator = enemyList.erase(iterator);
+		}
+	}
+}
+
+void EnemyManager::Draw() const
+{
+	for (auto iterator = enemyList.begin(); iterator != enemyList.end(); ++iterator)
+	{
+		(*iterator)->Draw();
+	}
+}
+
+std::list<Enemy*> &EnemyManager::EnemyList()
+{
+	return enemyList;
+}

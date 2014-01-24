@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Game">
+      <UniqueIdentifier>{6ade788d-bc8d-436e-b1a0-b20e9189667b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sprite">
+      <UniqueIdentifier>{8a7d0e19-6ee7-4e59-926c-27a535388aab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{f494e199-7783-433f-9841-3ac46ab3d8eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IRunner">
+      <UniqueIdentifier>{b7065ff9-76ef-41d3-93b9-14d229a8e9ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IDrawable">
+      <UniqueIdentifier>{4acc5664-9a53-44be-b16b-867dbd335f5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bullet">
+      <UniqueIdentifier>{c8209463-effe-42b8-8fd0-ce8b5c10f13f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BulletManager">
+      <UniqueIdentifier>{c73ed11d-957c-4f78-ab07-40fee8236930}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy">
+      <UniqueIdentifier>{99b2f032-4e55-4b67-a63e-a6256670e6c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AnimationSprite">
+      <UniqueIdentifier>{21b0b9b7-2b48-481c-8ad0-fdbb10b57722}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ILife">
+      <UniqueIdentifier>{1f1cd98c-23d9-44b1-a5da-245c559d555f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IPosition">
+      <UniqueIdentifier>{72e29f2b-1397-401f-aa03-8ce698a5d9d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IGameObject">
+      <UniqueIdentifier>{987cd502-4c3b-4691-9a7b-c82506ba7ab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StatusFrame">
+      <UniqueIdentifier>{7d1bc7bf-5e29-4bf4-b19e-6771e0456b55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CollisionManager">
+      <UniqueIdentifier>{81733555-3972-4082-99d2-d085b1c65002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EnemyManager">
+      <UniqueIdentifier>{6fd1bddb-4f6d-4f55-9c7f-1f9d26c3ad9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stage">
+      <UniqueIdentifier>{12b252a6-412c-4a7a-bbf7-0c5d68c73165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effect">
+      <UniqueIdentifier>{60f89140-e607-4b16-9b87-c83aa6d19d2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IRadiusGettable">
+      <UniqueIdentifier>{b21216ad-e106-4cd5-9908-74d36f9f846b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{a68ad326-b08d-4b5d-a2d1-8b165f282aa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stdafx">
+      <UniqueIdentifier>{f096e081-80c0-4f3c-ab71-f463a17000c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX">
+      <UniqueIdentifier>{fdaddb96-76ce-485f-a832-3ece38423b15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX\Texture">
+      <UniqueIdentifier>{61c80c23-7dea-44eb-81f0-be0176400acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX\DirectGraphics">
+      <UniqueIdentifier>{b6b5d3a8-894a-4ac9-bd41-ee53f2fec759}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX\DirectInput">
+      <UniqueIdentifier>{8f5d0147-9c8e-4d7c-b5d7-601c69f9e4f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="IRunnable.cpp">
+      <Filter>IRunner</Filter>
+    </ClCompile>
+    <ClCompile Include="IDrawable.cpp">
+      <Filter>IDrawable</Filter>
+    </ClCompile>
+    <ClCompile Include="Bullet.cpp">
+      <Filter>Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletManager.cpp">
+      <Filter>BulletManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationSprite.cpp">
+      <Filter>AnimationSprite</Filter>
+    </ClCompile>
+    <ClCompile Include="ILife.cpp">
+      <Filter>ILife</Filter>
+    </ClCompile>
+    <ClCompile Include="IPosition.cpp">
+      <Filter>IPosition</Filter>
+    </ClCompile>
+    <ClCompile Include="IGameObject.cpp">
+      <Filter>IGameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="StatusFrame.cpp">
+      <Filter>StatusFrame</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>CollisionManager</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyManager.cpp">
+      <Filter>EnemyManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect.cpp">
+      <Filter>Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="IRadiusGettable.cpp">
+      <Filter>IRadiusGettable</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>stdafx</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>DirectX\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectGraphics.cpp">
+      <Filter>DirectX\DirectGraphics</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectInput.cpp">
+      <Filter>DirectX\DirectInput</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="IRunnable.h">
+      <Filter>IRunner</Filter>
+    </ClInclude>
+    <ClInclude Include="IDrawable.h">
+      <Filter>IDrawable</Filter>
+    </ClInclude>
+    <ClInclude Include="Bullet.h">
+      <Filter>Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletManager.h">
+      <Filter>BulletManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="ILife.h">
+      <Filter>ILife</Filter>
+    </ClInclude>
+    <ClInclude Include="IPosition.h">
+      <Filter>IPosition</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameObject.h">
+      <Filter>IGameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusFrame.h">
+      <Filter>StatusFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>CollisionManager</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyManager.h">
+      <Filter>EnemyManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationSprite.h">
+      <Filter>AnimationSprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="IRadiusGettable.h">
+      <Filter>IRadiusGettable</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>stdafx</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>DirectX\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectGraphics.h">
+      <Filter>DirectX\DirectGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectInput.h">
+      <Filter>DirectX\DirectInput</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
