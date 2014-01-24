@@ -1,8 +1,8 @@
 #pragma once
-#include "stdafx.h"
-#include "CollisionManager.h"
-#include "BulletManager.h"
-#include "Player.h"
+#include "stdafx.hpp"
+#include "CollisionManager.hpp"
+#include "BulletManager.hpp"
+#include "Player.hpp"
 
 CollisionManager::CollisionManager(Player &player, std::list<Bullet*> &playerBulletList, std::list<Enemy*> &enemyList, std::list<Bullet*> &enemyBulletList)
 	:

@@ -1,6 +1,6 @@
 #pragma once
-#include "stdafx.h"
-#include "Sprite.h"
+#include "stdafx.hpp"
+#include "Sprite.hpp"
 
 Sprite::Sprite(const LPDIRECT3DDEVICE9 &direct3DDevice, const LPCTSTR &filename, const RECT &range, const D3DXVECTOR3 &center, const bool additive)
 :

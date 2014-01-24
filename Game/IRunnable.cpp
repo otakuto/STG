@@ -1,6 +1,6 @@
 #pragma once
-#include "stdafx.h"
-#include "IRunnable.h"
+#include "stdafx.hpp"
+#include "IRunnable.hpp"
 
 IRunnable::~IRunnable()
 {

@@ -1,11 +1,11 @@
 #pragma once
-#include "stdafx.h"
-#include "Bullet.h"
-#include "DirectGraphics.h"
-#include "Game.h"
-#include "Sprite.h"
-#include "IDrawable.h"
-#include "IRunnable.h"
+#include "stdafx.hpp"
+#include "Bullet.hpp"
+#include "DirectGraphics.hpp"
+#include "Game.hpp"
+#include "Sprite.hpp"
+#include "IDrawable.hpp"
+#include "IRunnable.hpp"
 
 Bullet::Bullet(const std::shared_ptr<const Sprite> sprite, const BulletOrbit &bulletOrbit, const D3DXVECTOR3 &position, const D3DXVECTOR3 &speed, const float radius, const float angle)
 	:

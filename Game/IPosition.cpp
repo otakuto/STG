@@ -1,6 +1,6 @@
 #pragma once
-#include "stdafx.h"
-#include "IPosition.h"
+#include "stdafx.hpp"
+#include "IPosition.hpp"
 
 
 IPosition::~IPosition()

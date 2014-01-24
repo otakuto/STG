@@ -1,6 +1,6 @@
 #pragma once
-#include "stdafx.h"
-#include "Effect.h"
+#include "stdafx.hpp"
+#include "Effect.hpp"
 
 Effect::Effect()
 :

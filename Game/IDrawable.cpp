@@ -1,6 +1,6 @@
 #pragma once
-#include "stdafx.h"
-#include "IDrawable.h"
+#include "stdafx.hpp"
+#include "IDrawable.hpp"
 
 IDrawable::~IDrawable()
 {

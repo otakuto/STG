@@ -11,29 +11,29 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AnimationSprite.h" />
-    <ClInclude Include="Bullet.h" />
-    <ClInclude Include="BulletManager.h" />
-    <ClInclude Include="CollisionManager.h" />
-    <ClInclude Include="DirectInput.h" />
-    <ClInclude Include="DirectGraphics.h" />
-    <ClInclude Include="Effect.h" />
-    <ClInclude Include="Enemy.h" />
-    <ClInclude Include="EnemyManager.h" />
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="Stage.h" />
-    <ClInclude Include="IRadiusGettable.h" />
-    <ClInclude Include="IDrawable.h" />
-    <ClInclude Include="IGameObject.h" />
-    <ClInclude Include="ILife.h" />
-    <ClInclude Include="IPosition.h" />
-    <ClInclude Include="Main.h" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="IRunnable.h" />
-    <ClInclude Include="Sprite.h" />
-    <ClInclude Include="StatusFrame.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="Texture.h" />
+    <ClInclude Include="AnimationSprite.hpp" />
+    <ClInclude Include="Bullet.hpp" />
+    <ClInclude Include="BulletManager.hpp" />
+    <ClInclude Include="CollisionManager.hpp" />
+    <ClInclude Include="DirectInput.hpp" />
+    <ClInclude Include="DirectGraphics.hpp" />
+    <ClInclude Include="Effect.hpp" />
+    <ClInclude Include="Enemy.hpp" />
+    <ClInclude Include="EnemyManager.hpp" />
+    <ClInclude Include="Game.hpp" />
+    <ClInclude Include="Stage.hpp" />
+    <ClInclude Include="IRadiusGettable.hpp" />
+    <ClInclude Include="IDrawable.hpp" />
+    <ClInclude Include="IGameObject.hpp" />
+    <ClInclude Include="ILife.hpp" />
+    <ClInclude Include="IPosition.hpp" />
+    <ClInclude Include="Main.hpp" />
+    <ClInclude Include="Player.hpp" />
+    <ClInclude Include="IRunnable.hpp" />
+    <ClInclude Include="Sprite.hpp" />
+    <ClInclude Include="StatusFrame.hpp" />
+    <ClInclude Include="stdafx.hpp" />
+    <ClInclude Include="Texture.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AnimationSprite.cpp" />
@@ -102,6 +102,7 @@
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>Create</PrecompiledHeader>
       <ForcedIncludeFiles>%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile>stdafx.hpp</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

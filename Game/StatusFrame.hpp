@@ -1,9 +1,9 @@
 #pragma once
-#include "stdafx.h"
-#include "IRunnable.h"
-#include "IDrawable.h"
-#include "Sprite.h"
-#include "DirectGraphics.h"
+#include "stdafx.hpp"
+#include "IRunnable.hpp"
+#include "IDrawable.hpp"
+#include "Sprite.hpp"
+#include "DirectGraphics.hpp"
 
 class StatusFrame : public IDrawable, public IRunnable
 {

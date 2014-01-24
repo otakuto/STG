@@ -1,8 +1,8 @@
 #pragma once
-#include "stdafx.h"
-#include "Player.h"
-#include "Enemy.h"
-#include "BulletManager.h"
+#include "stdafx.hpp"
+#include "Player.hpp"
+#include "Enemy.hpp"
+#include "BulletManager.hpp"
 
 class CollisionManager : public IRunnable
 {

@@ -1,13 +1,13 @@
 #pragma once
-#include "stdafx.h"
-#include "DirectGraphics.h"
-#include "DirectInput.h"
-#include "Sprite.h"
-#include "BulletManager.h"
-#include "IRunnable.h"
-#include "IDrawable.h"
-#include "IGameObject.h"
-#include "IRadiusGettable.h"
+#include "stdafx.hpp"
+#include "DirectGraphics.hpp"
+#include "DirectInput.hpp"
+#include "Sprite.hpp"
+#include "BulletManager.hpp"
+#include "IRunnable.hpp"
+#include "IDrawable.hpp"
+#include "IGameObject.hpp"
+#include "IRadiusGettable.hpp"
 
 class Player : public IDrawable, public IRunnable, public IGameObject
 {

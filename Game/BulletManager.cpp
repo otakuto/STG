@@ -1,8 +1,8 @@
 #pragma once
-#include "stdafx.h"
-#include "BulletManager.h"
-#include "Bullet.h"
-#include "IGameObject.h"
+#include "stdafx.hpp"
+#include "BulletManager.hpp"
+#include "Bullet.hpp"
+#include "IGameObject.hpp"
 
 BulletManager::BulletManager()
 	:

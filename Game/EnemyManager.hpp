@@ -1,7 +1,7 @@
 #pragma once
-#include "Enemy.h"
-#include "IRunnable.h"
-#include "IDrawable.h"
+#include "Enemy.hpp"
+#include "IRunnable.hpp"
+#include "IDrawable.hpp"
 
 class EnemyManager : public IRunnable, public IDrawable
 {

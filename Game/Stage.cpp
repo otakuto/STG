@@ -1,23 +1,23 @@
 #pragma once
-#include "stdafx.h"
-#include "Stage.h"
-#include "Bullet.h"
-#include "Enemy.h"
-#include "Player.h"
+#include "stdafx.hpp"
+#include "Stage.hpp"
+#include "Bullet.hpp"
+#include "Enemy.hpp"
+#include "Player.hpp"
 
 Stage::Stage(const DirectGraphics &directGraphics, Player &player, std::list<Bullet*> &playerBulletList, std::list<Enemy*> &enemyList, std::list<Bullet*> &enemyBulletList)
 {
 	bulletSprite = std::make_shared<std::vector<std::shared_ptr<Sprite>>>();
-	bulletSprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("bullet/000.png"), RECT_INIT(0, 0, 8, 8), D3DXVECTOR3(3, 3, 0), false));
-	bulletSprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("bullet/001.png"), RECT_INIT(0, 0, 15, 15), D3DXVECTOR3(7, 7, 0), false));
+	bulletSprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("bullet/000.png"), RECT{0, 0, 8, 8}, D3DXVECTOR3(3, 3, 0), false));
+	bulletSprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("bullet/001.png"), RECT{0, 0, 15, 15}, D3DXVECTOR3(7, 7, 0), false));
 
 	enemySprite = std::make_shared<std::vector<std::shared_ptr<Sprite>>>();
-	enemySprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("enemy/000.png"), RECT_INIT(0, 0, 31, 31), D3DXVECTOR3(15, 15, 0), false));
-	enemySprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("enemy/001.png"), RECT_INIT(0, 0, 31, 31), D3DXVECTOR3(15, 15, 0), false));
-	enemySprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("enemy/002.png"), RECT_INIT(0, 0, 31, 31), D3DXVECTOR3(15, 15, 0), false));
-	enemySprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("enemy/003.png"), RECT_INIT(0, 0, 31, 31), D3DXVECTOR3(15, 15, 0), false));
-	enemySprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("enemy/004.png"), RECT_INIT(0, 0, 31, 31), D3DXVECTOR3(15, 15, 0), false));
-	enemySprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("enemy/005.png"), RECT_INIT(0, 0, 31, 31), D3DXVECTOR3(15, 15, 0), false));
+	enemySprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("enemy/000.png"), RECT{0, 0, 31, 31}, D3DXVECTOR3(15, 15, 0), false));
+	enemySprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("enemy/001.png"), RECT{0, 0, 31, 31}, D3DXVECTOR3(15, 15, 0), false));
+	enemySprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("enemy/002.png"), RECT{0, 0, 31, 31}, D3DXVECTOR3(15, 15, 0), false));
+	enemySprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("enemy/003.png"), RECT{0, 0, 31, 31}, D3DXVECTOR3(15, 15, 0), false));
+	enemySprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("enemy/004.png"), RECT{0, 0, 31, 31}, D3DXVECTOR3(15, 15, 0), false));
+	enemySprite->push_back(std::make_shared<Sprite>(directGraphics.Device(), TEXT("enemy/005.png"), RECT{0, 0, 31, 31}, D3DXVECTOR3(15, 15, 0), false));
 
 	bulletOrbit = std::make_shared<std::vector<Bullet::BulletOrbit>>();
 	bulletOrbit->push_back([&player](D3DXVECTOR3 &position, D3DXVECTOR3 &speed, const unsigned long long &time)

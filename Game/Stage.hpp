@@ -1,9 +1,9 @@
 #pragma once
-#include "stdafx.h"
-#include "Bullet.h"
-#include "Enemy.h"
-#include "IRunnable.h"
-#include "Player.h"
+#include "stdafx.hpp"
+#include "Bullet.hpp"
+#include "Enemy.hpp"
+#include "IRunnable.hpp"
+#include "Player.hpp"
 
 class Stage : public IRunnable
 {

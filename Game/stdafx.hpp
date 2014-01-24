@@ -62,10 +62,3 @@ inline void SAFE_DELETE_ARRAY(T &p)
 		p = nullptr;
 	}
 }
-
-template<typename T>
-inline RECT RECT_INIT(const T &left, const T &top, const T &right, const T &bottom)
-{
-	RECT rect = {left, top, right, bottom};
-	return rect;
-}

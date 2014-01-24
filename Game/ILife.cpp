@@ -1,6 +1,6 @@
 #pragma once
-#include "stdafx.h"
-#include "ILife.h"
+#include "stdafx.hpp"
+#include "ILife.hpp"
 
 ILife::~ILife()
 {

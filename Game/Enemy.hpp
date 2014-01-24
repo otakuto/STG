@@ -1,13 +1,13 @@
 #pragma once
-#include "stdafx.h"
-#include "IDrawable.h"
-#include "IRunnable.h"
-#include "DirectGraphics.h"
-#include "DirectInput.h"
-#include "IGameObject.h"
-#include "BulletManager.h"
-#include "Sprite.h"
-#include "IRadiusGettable.h"
+#include "stdafx.hpp"
+#include "IDrawable.hpp"
+#include "IRunnable.hpp"
+#include "DirectGraphics.hpp"
+#include "DirectInput.hpp"
+#include "IGameObject.hpp"
+#include "BulletManager.hpp"
+#include "Sprite.hpp"
+#include "IRadiusGettable.hpp"
 
 class Enemy : public IDrawable, public IRunnable, public IGameObject
 {

@@ -1,6 +1,6 @@
 #pragma once
-#include "stdafx.h"
-#include "IGameObject.h"
+#include "stdafx.hpp"
+#include "IGameObject.hpp"
 
 IGameObject::~IGameObject()
 {

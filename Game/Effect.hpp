@@ -1,7 +1,7 @@
 #pragma once
-#include "stdafx.h"
-#include "IRunnable.h"
-#include "IDrawable.h"
+#include "stdafx.hpp"
+#include "IRunnable.hpp"
+#include "IDrawable.hpp"
 
 class Effect : public IRunnable, public IDrawable
 {

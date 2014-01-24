@@ -146,74 +146,74 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h">
-      <Filter>Game</Filter>
-    </ClInclude>
-    <ClInclude Include="Sprite.h">
-      <Filter>Sprite</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>Player</Filter>
-    </ClInclude>
-    <ClInclude Include="IRunnable.h">
-      <Filter>IRunner</Filter>
-    </ClInclude>
-    <ClInclude Include="IDrawable.h">
-      <Filter>IDrawable</Filter>
-    </ClInclude>
-    <ClInclude Include="Bullet.h">
-      <Filter>Bullet</Filter>
-    </ClInclude>
-    <ClInclude Include="BulletManager.h">
-      <Filter>BulletManager</Filter>
-    </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>Enemy</Filter>
-    </ClInclude>
-    <ClInclude Include="ILife.h">
-      <Filter>ILife</Filter>
-    </ClInclude>
-    <ClInclude Include="IPosition.h">
-      <Filter>IPosition</Filter>
-    </ClInclude>
-    <ClInclude Include="IGameObject.h">
-      <Filter>IGameObject</Filter>
-    </ClInclude>
-    <ClInclude Include="StatusFrame.h">
-      <Filter>StatusFrame</Filter>
-    </ClInclude>
-    <ClInclude Include="CollisionManager.h">
-      <Filter>CollisionManager</Filter>
-    </ClInclude>
-    <ClInclude Include="EnemyManager.h">
-      <Filter>EnemyManager</Filter>
-    </ClInclude>
-    <ClInclude Include="Stage.h">
-      <Filter>Stage</Filter>
-    </ClInclude>
-    <ClInclude Include="AnimationSprite.h">
+    <ClInclude Include="AnimationSprite.hpp">
       <Filter>AnimationSprite</Filter>
     </ClInclude>
-    <ClInclude Include="Effect.h">
-      <Filter>Effect</Filter>
+    <ClInclude Include="Bullet.hpp">
+      <Filter>Bullet</Filter>
     </ClInclude>
-    <ClInclude Include="IRadiusGettable.h">
-      <Filter>IRadiusGettable</Filter>
+    <ClInclude Include="BulletManager.hpp">
+      <Filter>BulletManager</Filter>
     </ClInclude>
-    <ClInclude Include="Main.h">
-      <Filter>Main</Filter>
+    <ClInclude Include="CollisionManager.hpp">
+      <Filter>CollisionManager</Filter>
     </ClInclude>
-    <ClInclude Include="stdafx.h">
-      <Filter>stdafx</Filter>
-    </ClInclude>
-    <ClInclude Include="Texture.h">
-      <Filter>DirectX\Texture</Filter>
-    </ClInclude>
-    <ClInclude Include="DirectGraphics.h">
+    <ClInclude Include="DirectGraphics.hpp">
       <Filter>DirectX\DirectGraphics</Filter>
     </ClInclude>
-    <ClInclude Include="DirectInput.h">
+    <ClInclude Include="DirectInput.hpp">
       <Filter>DirectX\DirectInput</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.hpp">
+      <Filter>DirectX\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.hpp">
+      <Filter>Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.hpp">
+      <Filter>Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyManager.hpp">
+      <Filter>EnemyManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="IDrawable.hpp">
+      <Filter>IDrawable</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameObject.hpp">
+      <Filter>IGameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.hpp">
+      <Filter>stdafx</Filter>
+    </ClInclude>
+    <ClInclude Include="StatusFrame.hpp">
+      <Filter>StatusFrame</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.hpp">
+      <Filter>Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.hpp">
+      <Filter>Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.hpp">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Main.hpp">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="IRunnable.hpp">
+      <Filter>IRunner</Filter>
+    </ClInclude>
+    <ClInclude Include="IRadiusGettable.hpp">
+      <Filter>IRadiusGettable</Filter>
+    </ClInclude>
+    <ClInclude Include="IPosition.hpp">
+      <Filter>IPosition</Filter>
+    </ClInclude>
+    <ClInclude Include="ILife.hpp">
+      <Filter>ILife</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

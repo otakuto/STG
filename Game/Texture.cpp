@@ -1,6 +1,6 @@
 #pragma once
-#include "stdafx.h"
-#include "Texture.h"
+#include "stdafx.hpp"
+#include "Texture.hpp"
 
 Texture::Texture()
 {

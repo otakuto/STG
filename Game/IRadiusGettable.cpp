@@ -1,6 +1,6 @@
 #pragma once
-#include "stdafx.h"
-#include "IRadiusGettable.h"
+#include "stdafx.hpp"
+#include "IRadiusGettable.hpp"
 
 IRadiusGettable::~IRadiusGettable()
 {

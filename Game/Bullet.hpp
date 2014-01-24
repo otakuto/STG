@@ -1,9 +1,9 @@
 #pragma once
-#include "stdafx.h"
-#include "DirectGraphics.h"
-#include "Sprite.h"
-#include "IDrawable.h"
-#include "IRunnable.h"
+#include "stdafx.hpp"
+#include "DirectGraphics.hpp"
+#include "Sprite.hpp"
+#include "IDrawable.hpp"
+#include "IRunnable.hpp"
 
 class Bullet : public IDrawable, public IRunnable
 {

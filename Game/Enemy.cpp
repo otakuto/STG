@@ -1,9 +1,9 @@
 #pragma once
-#include "stdafx.h"
-#include "DirectGraphics.h"
-#include "DirectInput.h"
-#include "BulletManager.h"
-#include "Enemy.h"
+#include "stdafx.hpp"
+#include "DirectGraphics.hpp"
+#include "DirectInput.hpp"
+#include "BulletManager.hpp"
+#include "Enemy.hpp"
 
 Enemy::Enemy(std::shared_ptr<const Sprite> sprite, const std::function<void(Enemy::Routine::caller_type&, Enemy&)> routine, const D3DXVECTOR3 &position, const float radius, const int life)
 :

@@ -1,9 +1,9 @@
 #pragma once
-#include "stdafx.h"
-#include "Bullet.h"
-#include "IDrawable.h"
-#include "IRunnable.h"
-#include "IGameObject.h"
+#include "stdafx.hpp"
+#include "Bullet.hpp"
+#include "IDrawable.hpp"
+#include "IRunnable.hpp"
+#include "IGameObject.hpp"
 
 class BulletManager : public IDrawable, public IRunnable
 {

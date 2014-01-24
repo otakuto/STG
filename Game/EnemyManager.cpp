@@ -1,7 +1,7 @@
 #pragma once
-#include "stdafx.h"
-#include "EnemyManager.h"
-#include "Enemy.h"
+#include "stdafx.hpp"
+#include "EnemyManager.hpp"
+#include "Enemy.hpp"
 
 EnemyManager::EnemyManager()
 	:

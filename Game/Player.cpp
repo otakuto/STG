@@ -1,16 +1,16 @@
 #pragma once
-#include "stdafx.h"
-#include "Player.h"
-#include "DirectGraphics.h"
-#include "DirectInput.h"
-#include "BulletManager.h"
-#include "Sprite.h"
-#include "Game.h"
+#include "stdafx.hpp"
+#include "Player.hpp"
+#include "DirectGraphics.hpp"
+#include "DirectInput.hpp"
+#include "BulletManager.hpp"
+#include "Sprite.hpp"
+#include "Game.hpp"
 
 Player::Player(const DirectGraphics &directGraphics, const std::vector<unsigned char> &key, BulletManager &bulletManager)
 :
-sprite(directGraphics.Device(), TEXT("player.png"), RECT_INIT(0, 0, 16, 16), D3DXVECTOR3(7, 7, 0), false),
-spriteBullet(std::make_shared<Sprite>(directGraphics.Device(), TEXT("shot.png"), RECT_INIT(0, 0, 8, 8), D3DXVECTOR3(3, 3, 0), false)),
+sprite(directGraphics.Device(), TEXT("player.png"), RECT{0, 0, 16, 16}, D3DXVECTOR3(7, 7, 0), false),
+spriteBullet(std::make_shared<Sprite>(directGraphics.Device(), TEXT("shot.png"), RECT{0, 0, 8, 8}, D3DXVECTOR3(3, 3, 0), false)),
 key(key),
 position(static_cast<float>(Game::OBJECT_ENABLED_WIDTH / 2), static_cast<float>(500), 0),
 bulletManager(bulletManager),
