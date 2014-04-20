@@ -2,7 +2,7 @@
 #include "stdafx.hpp"
 #include "DirectInput.hpp"
 
-const int DirectInput::KEY_LENGTH = 256;
+int const DirectInput::KEY_LENGTH = 256;
 
 DirectInput::DirectInput(const HWND &hWnd)
 :

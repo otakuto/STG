@@ -24,12 +24,12 @@ Player::~Player()
 {
 }
 
-const int Player::Life() const
+int const Player::Life() const
 {
 	return life;
 }
 
-void Player::Life(const int life)
+void Player::Life(int const life)
 {
 	if (invincibleTime)
 	{
@@ -45,12 +45,12 @@ D3DXVECTOR3 &Player::Position()
 	return position;
 }
 
-void Player::Position(const D3DXVECTOR3 &position)
+void Player::Position(D3DXVECTOR3 const &position)
 {
 	this->position = position;
 }
 
-const float Player::Radius() const
+float const Player::Radius() const
 {
 	return radius;
 }
@@ -65,7 +65,7 @@ void Player::Draw() const
 
 void Player::Run()
 {
-	static const int INVINCIBLE_TIME = 120;
+	static int const INVINCIBLE_TIME = 120;
 	if (invincibleTime)
 	{
 		--invincibleTime;
@@ -94,8 +94,8 @@ void Player::Run()
 	{
 		--move.x;
 	}
-	static const float NORMAL_SPEED = 4;
-	static const float LOW_SPEED = 2;
+	static float const NORMAL_SPEED = 4;
+	static float const LOW_SPEED = 2;
 	D3DXVECTOR3 nextPosition = D3DXVECTOR3(0, 0, 0);
 	if (key[DIK_LSHIFT])
 	{
@@ -105,7 +105,7 @@ void Player::Run()
 	{
 		nextPosition = position + (NORMAL_SPEED * move);
 	}
-	static const float MARGIN = 8;
+	static float const MARGIN = 8;
 	if (!(MARGIN <= nextPosition.x))
 	{
 		position.x = MARGIN;
@@ -131,7 +131,7 @@ void Player::Run()
 		position.y = nextPosition.y;
 	}
 
-	static const int SHOT_TIME_INTERVAL = 4;
+	static int const SHOT_TIME_INTERVAL = 4;
 	if (shotTime)
 	{
 		--shotTime;
@@ -144,9 +144,9 @@ void Player::Run()
 			{
 				position += speed;
 			};
-			static const D3DXVECTOR3 SHOT_POSITION_RIGHT = D3DXVECTOR3(12, -4, 0);
-			static const D3DXVECTOR3 SHOT_POSITION_LEFT = D3DXVECTOR3(-12, -4, 0);
-			static const D3DXVECTOR3 SPEED = D3DXVECTOR3(0, -10, 0);
+			static D3DXVECTOR3 const SHOT_POSITION_RIGHT = D3DXVECTOR3(12, -4, 0);
+			static D3DXVECTOR3 const SHOT_POSITION_LEFT = D3DXVECTOR3(-12, -4, 0);
+			static D3DXVECTOR3 const SPEED = D3DXVECTOR3(0, -10, 0);
 			bulletManager.BulletList().push_back(new Bullet(spriteBullet, BULLET_ORBIT, position + SHOT_POSITION_RIGHT, SPEED, 4, 0));
 			bulletManager.BulletList().push_back(new Bullet(spriteBullet, BULLET_ORBIT, position + SHOT_POSITION_LEFT, SPEED, 4, 0));
 			shotTime = SHOT_TIME_INTERVAL;

@@ -8,6 +8,6 @@ public:
 
 public:
 	virtual D3DXVECTOR3 &Position() = 0;
-	virtual void Position(const D3DXVECTOR3 &position) = 0;
+	virtual void Position(D3DXVECTOR3 const&position) = 0;
 };
 

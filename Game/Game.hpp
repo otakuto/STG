@@ -8,12 +8,12 @@
 class Game
 {
 public:
-	static const int WINDOW_WIDTH;
-	static const int WINDOW_HEIGHT;
-	static const int OBJECT_ENABLED_WIDTH;
-	static const int OBJECT_ENABLED_HEIGHT;
+	static int const WINDOW_WIDTH;
+	static int const WINDOW_HEIGHT;
+	static int const OBJECT_ENABLED_WIDTH;
+	static int const OBJECT_ENABLED_HEIGHT;
 public:
-	Game(const HWND &hWnd);
+	Game(HWND const &hWnd);
 	~Game();
 
 public:

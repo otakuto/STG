@@ -21,11 +21,11 @@
     <ClInclude Include="Enemy.hpp" />
     <ClInclude Include="EnemyManager.hpp" />
     <ClInclude Include="Game.hpp" />
+    <ClInclude Include="ILife.hpp" />
     <ClInclude Include="Stage.hpp" />
     <ClInclude Include="IRadiusGettable.hpp" />
     <ClInclude Include="IDrawable.hpp" />
     <ClInclude Include="IGameObject.hpp" />
-    <ClInclude Include="ILife.hpp" />
     <ClInclude Include="IPosition.hpp" />
     <ClInclude Include="Main.hpp" />
     <ClInclude Include="Player.hpp" />
@@ -46,10 +46,10 @@
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="EnemyManager.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="ILife.cpp" />
     <ClCompile Include="IRadiusGettable.cpp" />
     <ClCompile Include="IDrawable.cpp" />
     <ClCompile Include="IGameObject.cpp" />
-    <ClCompile Include="ILife.cpp" />
     <ClCompile Include="IPosition.cpp" />
     <ClCompile Include="IRunnable.cpp" />
     <ClCompile Include="Main.cpp" />

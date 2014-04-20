@@ -2,7 +2,7 @@
 #include "stdafx.hpp"
 #include "Sprite.hpp"
 
-Sprite::Sprite(const LPDIRECT3DDEVICE9 &direct3DDevice, const LPCTSTR &filename, const RECT &range, const D3DXVECTOR3 &center, const bool additive)
+Sprite::Sprite(LPDIRECT3DDEVICE9 const &direct3DDevice, const LPCTSTR &filename, RECT const &range, D3DXVECTOR3 const&center, const bool additive)
 :
 direct3DDevice(direct3DDevice),
 range(range),
@@ -54,7 +54,7 @@ void Sprite::setRenderState() const
 	direct3DDevice->SetRenderState(D3DRS_DESTBLEND, dest);
 }
 
-void Sprite::Draw(const D3DXVECTOR3 &position) const
+void Sprite::Draw(D3DXVECTOR3 const&position) const
 {
 	/*
 	position.x = (int)position.x;
@@ -67,7 +67,7 @@ void Sprite::Draw(const D3DXVECTOR3 &position) const
 	sprite->End();
 }
 
-void Sprite::Draw(const D3DXVECTOR3 &position, const float angle) const
+void Sprite::Draw(D3DXVECTOR3 const&position, float const angle) const
 {
 	sprite->Begin(D3DXSPRITE_ALPHABLEND);
 	D3DXMATRIX matRotation;
@@ -85,7 +85,7 @@ void Sprite::Draw(const D3DXVECTOR3 &position, const float angle) const
 	sprite->End();
 }
 
-void Sprite::Draw(const D3DXVECTOR3 &position, const float angle, const float scale, const int alpha) const
+void Sprite::Draw(D3DXVECTOR3 const&position, float const angle, float const scale, int const alpha) const
 {
 	sprite->Begin(D3DXSPRITE_ALPHABLEND);
 	D3DXMATRIX matScale, matRotation, matTranslation, matWorld, matIdentity;

@@ -20,11 +20,11 @@ public:
 	void Run() override;
 
 public:
-	const int Life() const override;
-	void Life(const int life) override;
+	int const Life() const override;
+	void Life(int const life) override;
 	D3DXVECTOR3 &Position() override;
-	void Position(const D3DXVECTOR3 &position) override;
-	const float Radius() const override;
+	void Position(D3DXVECTOR3 const&position) override;
+	float const Radius() const override;
 
 protected:
 	const Sprite sprite;

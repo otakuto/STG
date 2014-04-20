@@ -32,9 +32,9 @@ void EnemyManager::Run()
 
 void EnemyManager::Draw() const
 {
-	for (auto iterator = enemyList.begin(); iterator != enemyList.end(); ++iterator)
+	for (auto const iterator : enemyList)
 	{
-		(*iterator)->Draw();
+		iterator->Draw();
 	}
 }
 

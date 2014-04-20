@@ -101,7 +101,7 @@ void DirectGraphics::setFogConfiguration()
 }
 
 
-const LPDIRECT3DDEVICE9 &DirectGraphics::Device() const
+LPDIRECT3DDEVICE9 const &DirectGraphics::Device() const
 {
 	return device;
 }

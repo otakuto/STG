@@ -28,9 +28,6 @@
     <Filter Include="AnimationSprite">
       <UniqueIdentifier>{21b0b9b7-2b48-481c-8ad0-fdbb10b57722}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ILife">
-      <UniqueIdentifier>{1f1cd98c-23d9-44b1-a5da-245c559d555f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="IPosition">
       <UniqueIdentifier>{72e29f2b-1397-401f-aa03-8ce698a5d9d8}</UniqueIdentifier>
     </Filter>
@@ -88,6 +85,9 @@
     <Filter Include="Resource\Bullet">
       <UniqueIdentifier>{23f999c9-69c7-4dc9-8e7f-22ee889905b2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ILife">
+      <UniqueIdentifier>{7a994703-e8eb-4398-acf2-6eb6b8d4ca95}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp">
@@ -116,9 +116,6 @@
     </ClCompile>
     <ClCompile Include="AnimationSprite.cpp">
       <Filter>AnimationSprite</Filter>
-    </ClCompile>
-    <ClCompile Include="ILife.cpp">
-      <Filter>ILife</Filter>
     </ClCompile>
     <ClCompile Include="IPosition.cpp">
       <Filter>IPosition</Filter>
@@ -158,6 +155,9 @@
     </ClCompile>
     <ClCompile Include="DirectInput.cpp">
       <Filter>DirectX\DirectInput</Filter>
+    </ClCompile>
+    <ClCompile Include="ILife.cpp">
+      <Filter>ILife</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

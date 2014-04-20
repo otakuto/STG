@@ -2,7 +2,7 @@
 #include "stdafx.hpp"
 #include "AnimationSprite.hpp"
 
-AnimationSprite::AnimationSprite(const LPDIRECT3DDEVICE9 &direct3DDevice, const std::vector<const LPDIRECT3DTEXTURE9> &texture, const RECT &range, const D3DXVECTOR3 &center, const bool additive, const int interval)
+AnimationSprite::AnimationSprite(LPDIRECT3DDEVICE9 const &direct3DDevice, const std::vector<const LPDIRECT3DTEXTURE9> &texture, RECT const &range, D3DXVECTOR3 const&center, const bool additive, int const interval)
 :
 direct3DDevice(direct3DDevice),
 texture(texture),
@@ -19,7 +19,7 @@ AnimationSprite::~AnimationSprite()
 {
 }
 
-void AnimationSprite::Draw(const D3DXVECTOR3 &position) const
+void AnimationSprite::Draw(D3DXVECTOR3 const&position) const
 {
 	/*
 	D3DXVECTOR3 p = position;
@@ -33,7 +33,7 @@ void AnimationSprite::Draw(const D3DXVECTOR3 &position) const
 	sprite->End();
 }
 
-void AnimationSprite::Draw(const D3DXVECTOR3 &position, const float angle) const
+void AnimationSprite::Draw(D3DXVECTOR3 const&position, float const angle) const
 {
 	sprite->Begin(D3DXSPRITE_ALPHABLEND);
 	D3DXMATRIX matRotation;
@@ -51,7 +51,7 @@ void AnimationSprite::Draw(const D3DXVECTOR3 &position, const float angle) const
 	sprite->End();
 }
 
-void AnimationSprite::Draw(const D3DXVECTOR3 &position, const float angle, const float scale, const int alpha) const
+void AnimationSprite::Draw(D3DXVECTOR3 const&position, float const angle, float const scale, int const alpha) const
 {
 	sprite->Begin(D3DXSPRITE_ALPHABLEND);
 	D3DXMATRIX matScale, matRotation, matTranslation, matWorld, matIdentity;

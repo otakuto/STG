@@ -19,32 +19,32 @@ CollisionManager::~CollisionManager()
 
 void CollisionManager::Run()
 {
-	for (auto bullet = playerBulletList.begin(); bullet != playerBulletList.end(); ++bullet)
+	for (auto const bullet : playerBulletList)
 	{
-		for (auto enemy = enemyList.begin(); enemy != enemyList.end(); ++enemy)
+		for (auto const enemy : enemyList)
 		{
-			if (D3DXVec3Length(&((*bullet)->Position() - (*enemy)->Position())) < (*bullet)->Radius() + (*enemy)->Radius())
+			if (D3DXVec3Length(&(bullet->Position() - enemy->Position())) < bullet->Radius() + enemy->Radius())
 			{
-				(*bullet)->Enabled(false);
-				(*enemy)->Damage(1);
+				bullet->Enabled(false);
+				enemy->Damage(1);
 			}
 		}
 	}
-	//return
-	for (auto enemy = enemyList.begin(); enemy != enemyList.end(); ++enemy)
+	
+	for (auto const enemy : enemyList)
 	{
-		if (D3DXVec3Length(&((*enemy)->Position() - player.Position())) < (*enemy)->Radius() + player.Radius())
+		if (D3DXVec3Length(&(enemy->Position() - player.Position())) < enemy->Radius() + player.Radius())
 		{
-			(*enemy)->Damage(1);
+			enemy->Damage(1);
 			player.Life(0);
 		}
 	}
 
-	for (auto bullet = enemyBulletList.begin(); bullet != enemyBulletList.end(); ++bullet)
+	for (auto const bullet : enemyBulletList)
 	{
-		if (D3DXVec3Length(&((*bullet)->Position() - player.Position())) < (*bullet)->Radius() + player.Radius())
+		if (D3DXVec3Length(&(bullet->Position() - player.Position())) < bullet->Radius() + player.Radius())
 		{
-			(*bullet)->Enabled(false);
+			bullet->Enabled(false);
 			player.Life(0);
 		}
 	}

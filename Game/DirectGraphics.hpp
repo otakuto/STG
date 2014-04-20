@@ -8,7 +8,7 @@ public:
 	~DirectGraphics();
 
 public:
-	const LPDIRECT3DDEVICE9 &Device() const;
+	LPDIRECT3DDEVICE9 const &Device() const;
 
 public:
 	void createDirect3DDeviceObject(const HWND &hWnd);

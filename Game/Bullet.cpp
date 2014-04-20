@@ -7,7 +7,7 @@
 #include "IDrawable.hpp"
 #include "IRunnable.hpp"
 
-Bullet::Bullet(const std::shared_ptr<const Sprite> sprite, const BulletOrbit &bulletOrbit, const D3DXVECTOR3 &position, const D3DXVECTOR3 &speed, const float radius, const float angle)
+Bullet::Bullet(const std::shared_ptr<const Sprite> sprite, const BulletOrbit &bulletOrbit, D3DXVECTOR3 const &position, D3DXVECTOR3 const &speed, float const radius, float const angle)
 	:
 	sprite(sprite),
 	bulletOrbit(bulletOrbit),
@@ -34,22 +34,22 @@ void Bullet::Enabled(const bool enabled)
 	this->enabled = enabled;
 }
 
-const float Bullet::Radius() const
+float const Bullet::Radius() const
 {
 	return radius;
 }
 
-const D3DXVECTOR3 &Bullet::Position() const
+D3DXVECTOR3 const &Bullet::Position() const
 {
 	return position;
 }
 
-const float Bullet::Angle() const
+float const Bullet::Angle() const
 {
 	return angle;
 }
 
-void Bullet::Angle(const float angle)
+void Bullet::Angle(float const angle)
 {
 	this->angle = angle;
 }

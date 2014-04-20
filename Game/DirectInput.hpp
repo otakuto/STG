@@ -14,7 +14,7 @@ public:
 	void Run();
 
 protected:
-	static const int KEY_LENGTH;
+	static int const KEY_LENGTH;
 
 protected:
 	LPDIRECTINPUT8 directInput;

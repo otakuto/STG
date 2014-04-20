@@ -3,7 +3,10 @@
 #include "IRunnable.hpp"
 #include "IDrawable.hpp"
 
-class EnemyManager : public IRunnable, public IDrawable
+class EnemyManager
+	:
+	public IRunnable,
+	public IDrawable
 {
 public:
 	EnemyManager();

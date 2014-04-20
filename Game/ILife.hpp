@@ -7,7 +7,7 @@ public:
 	virtual ~ILife();
 
 public:
-	virtual const int Life() const = 0;
-	virtual void Life(const int life) = 0;
+	virtual int const Life() const = 0;
+	virtual void Life(int const life) = 0;
 };
 

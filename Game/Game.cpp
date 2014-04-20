@@ -14,10 +14,10 @@
 #include "Stage.hpp"
 #include "Effect.hpp"
 
-const int Game::WINDOW_WIDTH = 800;
-const int Game::WINDOW_HEIGHT = 600;
-const int Game::OBJECT_ENABLED_WIDTH = 400;
-const int Game::OBJECT_ENABLED_HEIGHT = 600;
+int const Game::WINDOW_WIDTH = 800;
+int const Game::WINDOW_HEIGHT = 600;
+int const Game::OBJECT_ENABLED_WIDTH = 400;
+int const Game::OBJECT_ENABLED_HEIGHT = 600;
 
 Game::Game(const HWND &hWnd)
 :
@@ -55,9 +55,9 @@ iDrawableList()
 
 Game::~Game()
 {
-	for (auto iterator = iRunnableList.begin(); iterator != iRunnableList.end(); ++iterator)
+	for (auto iterator : iRunnableList)
 	{
-		SAFE_DELETE(*iterator);
+		SAFE_DELETE(iterator);
 	}
 }
 
@@ -65,19 +65,19 @@ void Game::Run()
 {
 	directInput.Run();
 
-	for (auto iterator = iRunnableList.begin(); iterator != iRunnableList.end(); ++iterator)
+	for (auto const iterator : iRunnableList)
 	{
-		(*iterator)->Run();
+		iterator->Run();
 	}
 
-	const LPDIRECT3DDEVICE9 device = directGraphics.Device();
+	LPDIRECT3DDEVICE9 const device = directGraphics.Device();
 
 	device->Clear(0, nullptr, (D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER | D3DCLEAR_STENCIL), D3DCOLOR_XRGB(0xFF, 0xFF, 0xFF), 1.0, 0);
 	device->BeginScene();
 
-	for (auto iterator = iDrawableList.begin(); iterator != iDrawableList.end(); ++iterator)
+	for (auto const iterator : iDrawableList)
 	{
-		(*iterator)->Draw();
+		iterator->Draw();
 	}
 
 	device->EndScene();

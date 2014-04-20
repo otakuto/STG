@@ -5,29 +5,32 @@
 #include "IDrawable.hpp"
 #include "IRunnable.hpp"
 
-class Bullet : public IDrawable, public IRunnable
+class Bullet
+	:
+	public IDrawable,
+	public IRunnable
 {
 public:
 	using BulletOrbit = std::function<void(D3DXVECTOR3 &position, D3DXVECTOR3 &speed, const unsigned long long time)>;
 
 public:
-	Bullet(const std::shared_ptr<const Sprite> sprite, const BulletOrbit &bulletOrbit, const D3DXVECTOR3 &position, const D3DXVECTOR3 &speed, const float radius, const float angle);
+	Bullet(std::shared_ptr<Sprite const> const sprite, BulletOrbit const &bulletOrbit, D3DXVECTOR3 const &position, D3DXVECTOR3 const &speed, float const radius, float const angle);
 	~Bullet();
 
 public:
-	const bool Enabled() const;
-	void Enabled(const bool enabled);
-	const float Radius() const;
-	const D3DXVECTOR3 &Position() const;
-	const float Angle() const;
-	void Angle(const float angle);
+	bool const Enabled() const;
+	void Enabled(bool const enabled);
+	float const Radius() const;
+	D3DXVECTOR3 const &Position() const;
+	float const Angle() const;
+	void Angle(float const angle);
 public:
 	void Draw() const override;
 	void Run() override;
 
 protected:
-	const std::shared_ptr<const Sprite> sprite;
-	const BulletOrbit bulletOrbit;
+	std::shared_ptr<Sprite const> const sprite;
+	BulletOrbit const bulletOrbit;
 	D3DXVECTOR3 position;
 	D3DXVECTOR3 speed;
 	unsigned long long time;
