@@ -3,7 +3,10 @@
 #include "IRunnable.hpp"
 #include "IDrawable.hpp"
 
-class Effect : public IRunnable, public IDrawable
+class Effect
+	:
+	public IRunnable,
+	public IDrawable
 {
 public:
 	Effect();
@@ -14,8 +17,8 @@ public:
 	void Draw() const override;
 
 public:
-	const bool Enabled() const;
-	void Enabled(const bool enabled);
+	bool const Enabled() const;
+	void Enabled(bool const enabled);
 
 protected:
 	bool enabled;

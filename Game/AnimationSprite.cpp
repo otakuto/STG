@@ -2,7 +2,7 @@
 #include "stdafx.hpp"
 #include "AnimationSprite.hpp"
 
-AnimationSprite::AnimationSprite(LPDIRECT3DDEVICE9 const &direct3DDevice, const std::vector<const LPDIRECT3DTEXTURE9> &texture, RECT const &range, D3DXVECTOR3 const&center, const bool additive, int const interval)
+AnimationSprite::AnimationSprite(LPDIRECT3DDEVICE9 const & direct3DDevice, std::vector<LPDIRECT3DTEXTURE9 const> const & texture, RECT const & range, D3DXVECTOR3 const&center, bool const additive, int const interval)
 :
 direct3DDevice(direct3DDevice),
 texture(texture),

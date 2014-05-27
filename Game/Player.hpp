@@ -27,8 +27,8 @@ public:
 	float const Radius() const override;
 
 protected:
-	const Sprite sprite;
-	std::shared_ptr<const Sprite> spriteBullet;
+	Sprite const sprite;
+	std::shared_ptr<Sprite const> spriteBullet;
 	const std::vector<unsigned char> &key;
 	BulletManager &bulletManager;
 	D3DXVECTOR3 position;

@@ -5,7 +5,7 @@
 #include "BulletManager.hpp"
 #include "Enemy.hpp"
 
-Enemy::Enemy(std::shared_ptr<const Sprite> sprite, const std::function<void(Enemy::Routine::caller_type&, Enemy&)> routine, const D3DXVECTOR3 &position, const float radius, const int life)
+Enemy::Enemy(std::shared_ptr<Sprite const> sprite, const std::function<void(Enemy::Routine::caller_type&, Enemy&)> routine, const D3DXVECTOR3 &position, float const radius, int const life)
 :
 sprite(sprite),
 routine(std::bind(routine, std::placeholders::_1, std::ref(*this))),
@@ -38,22 +38,22 @@ void Enemy::Run()
 	}
 }
 
-const bool Enemy::Enabled() const
+bool const Enemy::Enabled() const
 {
 	return enabled;
 }
 
-void Enemy::Enabled(const bool enabled)
+void Enemy::Enabled(bool const enabled)
 {
 	this->enabled = enabled;
 }
 
-const int Enemy::Life() const
+int const Enemy::Life() const
 {
 	return life;
 }
 
-void Enemy::Life(const int life)
+void Enemy::Life(int const life)
 {
 	this->life = life;
 }
@@ -68,12 +68,12 @@ void Enemy::Position(const D3DXVECTOR3 &position)
 	this->position = position;
 }
 
-const float Enemy::Radius() const
+float const Enemy::Radius() const
 {
 	return radius;
 }
 
-void Enemy::Damage(const int damage)
+void Enemy::Damage(int const damage)
 {
 	life -= damage;
 	if (life < 0)

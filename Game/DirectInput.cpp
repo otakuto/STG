@@ -4,7 +4,7 @@
 
 int const DirectInput::KEY_LENGTH = 256;
 
-DirectInput::DirectInput(const HWND &hWnd)
+DirectInput::DirectInput(HWND const & hWnd)
 :
 key(std::vector<unsigned char>(KEY_LENGTH))
 {

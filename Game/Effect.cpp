@@ -20,12 +20,12 @@ void Effect::Draw() const
 {
 }
 
-const bool Effect::Enabled() const
+bool const Effect::Enabled() const
 {
 	return enabled;
 }
 
-void Effect::Enabled(const bool enabled)
+void Effect::Enabled(bool const enabled)
 {
 	this->enabled = enabled;
 }

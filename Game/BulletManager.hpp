@@ -5,7 +5,10 @@
 #include "IRunnable.hpp"
 #include "IGameObject.hpp"
 
-class BulletManager : public IDrawable, public IRunnable
+class BulletManager
+	:
+	public IDrawable,
+	public IRunnable
 {
 public:
 	BulletManager();
@@ -16,8 +19,8 @@ public:
 	void Run() override;
 
 public:
-	std::list<Bullet*> &BulletList();
+	std::list<Bullet *> & BulletList();
 
 protected:
-	std::list<Bullet*> bulletList;
+	std::list<Bullet *> bulletList;
 };

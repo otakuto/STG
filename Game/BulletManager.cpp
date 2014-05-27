@@ -6,23 +6,23 @@
 
 BulletManager::BulletManager()
 	:
-	bulletList(std::list<Bullet*>())
+	bulletList(std::list<Bullet *>())
 {
 }
 
 BulletManager::~BulletManager()
 {
-	for (auto iterator = bulletList.begin(); iterator != bulletList.end(); ++iterator)
+	for (auto iterator : bulletList)
 	{
-		delete &**iterator;
+		delete iterator;
 	}
 }
 
 void BulletManager::Draw() const
 {
-	for (auto iterator = bulletList.begin(); iterator != bulletList.end(); ++iterator)
+	for (auto iterator : bulletList)
 	{
-		(*iterator)->Draw();
+		iterator->Draw();
 	}
 }
 
@@ -43,7 +43,7 @@ void BulletManager::Run()
 	}
 }
 
-std::list<Bullet*> &BulletManager::BulletList()
+std::list<Bullet *> & BulletManager::BulletList()
 {
 	return bulletList;
 }
